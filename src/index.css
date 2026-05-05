@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: #7c3aed;
+    --primary-light: #8b5cf6;
+    --bg-dark: #0f172a;
+    --bg-darker: #05050a;
+    --bg-gradient: radial-gradient(ellipse at top, #100e28 0%, #04040a 70%, #010103 100%);
+
+    --ambient-shape-1: #7c3aed;
+    --ambient-shape-2: #3b82f6;
+    --ambient-shape-3: #d946ef;
+
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --text-light: #94a3b8;
+
+    --card-bg: #ffffff;
+    --card-bg-light: #f8fafc;
+    --border-color: #e2e8f0;
+
+    --premium-hex-border: linear-gradient(145deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.05) 30%, rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0.5) 100%);
+    --glow-effect: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.3) 30%, rgba(217, 70, 239, 0.5) 60%, rgba(124, 58, 237, 1) 100%);
+  }
+
+  body {
+    @apply antialiased bg-dark text-white;
+  }
+}
+
+/* Animations */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+/* Base fade in */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.webchat {
+  background-color: #121212;
+}
+
+.react-scroll-to-bottom--css-fvcmc-1n7m0yu .webchat__basic-transcript__scrollable {
+  background-color: black;
+}
+
+.webchat__bubble {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}

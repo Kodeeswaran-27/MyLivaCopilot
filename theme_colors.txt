@@ -1,0 +1,37 @@
+/*
+  Website Theme and UI Colors
+  ---------------------------
+  
+  This file lists the primary, background, and gradient colors used in your 
+  GenAI Agents interface. These are defined as CSS variables in 
+  your /src/css/globals.css file.
+*/
+
+1. PRIMARY COLORS:
+   - Primary (Violet): #7c3aed   (--primary-color)
+   - Primary Light:    #8b5cf6   (--primary-light)
+
+2. BACKGROUND COLORS:
+   - Dark Background:   #0f172a   (--bg-dark)
+   - Darker Background: #05050a   (--bg-darker)
+   - Main Gradient:     radial-gradient(ellipse at top, #100e28 0%, #04040a 70%, #010103 100%) (--bg-gradient)
+
+3. DYNAMIC AMBIENT SHAPES (Animated Background Glows):
+   - Shape 1 (Violet): #7c3aed (at top-left)
+   - Shape 2 (Blue):   #3b82f6 (at bottom-right)
+   - Shape 3 (Pink):   #d946ef (at top-center)
+
+4. TEXT COLORS:
+   - Main Text:   #1e293b   (--text-main)
+   - Muted Text:  #64748b   (--text-muted)
+   - Light Text:  #94a3b8   (--text-light)
+
+5. COMPONENT COLORS:
+   - Card Background:       #ffffff (Pure White)
+   - Card Background Light: #f8fafc (Light Gray)
+   - Border Color:          #e2e8f0 (Light Border)
+   - Success Green:         #dcfce7 (Background), #166534 (Text)
+
+6. HEXAGON BORDERS AND GLOWS:
+   - Premium Hex Border: linear-gradient(145deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.05) 30%, rgba(255,255,255,0.2) 60%, rgba(255,255,255,0.5) 100%)
+   - Glow Effect:        linear-gradient(145deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.3) 30%, rgba(217,70,239,0.5) 60%, rgba(124,58,237,1) 100%)
